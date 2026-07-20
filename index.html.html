@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodrigo Dev — Engenheiro de Software</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+<div id="preloader">
+  <div class="pre-logo">
+    <span class="chev">&lt;</span><span class="txt">rodrigo.dev</span><span class="cursor">_</span><span class="chev">&gt;</span>
+  </div>
+  <div class="pre-bar"></div>
+  <div class="pre-status" id="preStatus">compilando…</div>
+</div>
+
+<canvas id="net"></canvas>
+<div class="noise"></div>
+
+<div class="social-rail" aria-label="Redes sociais">
+  <div class="rail-line"></div>
+  <a href="https://github.com/rodrigo-sillva" target="_blank" rel="noopener" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+  </a>
+  <a href="https://www.linkedin.com/in/rodrigo-da-cruz-silva/" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10.2" x2="7.5" y2="17"/><line x1="7.5" y1="6.9" x2="7.5" y2="7"/><path d="M11.3 17v-4.2c0-1.5.9-2.6 2.3-2.6 1.3 0 2.1.9 2.1 2.6V17"/><line x1="11.3" y1="10.2" x2="11.3" y2="17"/></svg>
+  </a>
+  <a href="https://www.instagram.com/rodrigocruzz.s?igsh=YnJjajUyamhsdjR5" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+  </a>
+  <div class="rail-line"></div>
+</div>
+
+<header id="siteHeader">
+  <a href="#hero" class="logo" aria-label="Rodrigo Dev — início">
+    <span class="bracket">&lt;</span><span class="rodrigo">Rodrigo</span><span class="dev">Dev</span><span class="bracket">&gt;</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot"></span> DISPONÍVEL PARA NOVOS PROJETOS</div>
+        <h1>
+          <span class="type-line" id="typeLine">Desenvolvedor de Software</span>
+          <span class="grad">Full Stack.<span class="caret"></span></span>
+        </h1>
+        <p class="lead">
+          Construo sistemas robustos e escaláveis unindo arquitetura sólida em <strong style="color:var(--text-hi)">Java</strong>, <strong style="color:var(--text-hi)">Kotlin</strong> e <strong style="color:var(--text-hi)">C#</strong> a experiências dinâmicas no frontend com <strong style="color:var(--text-hi)">JavaScript</strong>. Foco em resolver problemas reais com código limpo e escalável.
+        </p>
+
+        <div class="tech-badges">
+          <div class="tech-badge">
+            <svg viewBox="0 0 24 24"><path fill="#1e90ff" d="M8.5 16.5c-1.6 1 3.6 1.7 6.7.6-2.1 1.5-9.9 2.2-8.5-.8 0 0 .9.1 1.8.2Z"/><path fill="#00d2ff" d="M15.9 13.4c1.4 1.6-.4 2.9-.4 2.9s3.6-1.9 2-4.2c-1.5-2.2-2.7-3.3 3.6-7 0 0-9.9 2.5-5.2 8.3Z"/><path fill="#1e90ff" d="M10 18.9s-1.6 1 1.1 1.3c3.2.4 4.9.3 8.3-.4 0 0 .8.5-.9 1-3.5.9-13.1 1.2-1.6-.5-.9-.2Zm-.6-2.7s-1.8 1.3 1 1.6c3.4.4 6.1.4 10.5-.6 0 0 .6.6-.5 1-4.1 1.2-14.7.8-9.6-1.3-.9.3Z"/></svg>
+            Java
+          </div>
+          <div class="tech-badge">
+            <svg viewBox="0 0 24 24"><defs><linearGradient id="kt-b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00d2ff"/><stop offset="1" stop-color="#1e90ff"/></linearGradient></defs><path fill="url(#kt-b)" d="M3 3h18L12 12l9 9H3V3Z"/></svg>
+            Kotlin
+          </div>
+          <div class="tech-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00d2ff" stroke-width="1.7"><path d="M9 8v8M9 12h4"/><path d="M17.5 9.5l1.2-.8M17.5 9.5v1.6M17.5 14.5l1.2.8M17.5 14.5v-1.6M20 9.5l1.2-.8M20 9.5v1.6M20 14.5l1.2.8M20 14.5v-1.6"/><rect x="3.2" y="4.5" width="17.6" height="15" rx="2.4"/></svg>
+            C#
+          </div>
+          <div class="tech-badge">
+            <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#1e1e1e"/><path fill="#00d2ff" d="M6.6 16.4l1.5-.9c.3.5.6.9 1.2.9.6 0 1-.2 1-1.2V9.8h1.9v5.4c0 2-1.2 2.9-2.8 2.9-1.5 0-2.4-.8-2.8-1.7Z"/><path fill="#1e90ff" d="M13 16.2l1.5-.9c.4.6 1 1.1 1.9 1.1.8 0 1.3-.4 1.3-.9 0-.6-.5-.9-1.4-1.3l-.5-.2c-1.4-.6-2.3-1.3-2.3-2.9 0-1.4 1.1-2.5 2.8-2.5 1.2 0 2.1.4 2.7 1.5l-1.5.9c-.3-.5-.6-.8-1.2-.8-.5 0-.9.3-.9.8 0 .5.3.7 1.2 1.1l.5.2c1.7.7 2.6 1.4 2.6 3.1 0 1.7-1.4 2.7-3.2 2.7-1.8 0-2.9-.8-3.5-1.9Z"/></svg>
+            JavaScript
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projetos" class="btn btn-primary">Veja Meus Projetos</a>
+          <a href="#contato" class="btn btn-ghost">Entrar em Contato</a>
+        </div>
+        <div class="hero-meta">
+          <div><div class="num">3+</div><div class="label">Anos em formação técnica</div></div>
+          <div><div class="num">12</div><div class="label">Projetos entregues</div></div>
+          <div><div class="num">100%</div><div class="label">Código próprio &amp; versionado</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 560 420">
+          <defs>
+            <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#00d2ff" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#00d2ff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1e90ff"/>
+              <stop offset="1" stop-color="#00d2ff"/>
+            </linearGradient>
+          </defs>
+
+          <circle cx="230" cy="210" r="95" fill="url(#coreGlow)" class="pulse-glow"/>
+          <circle cx="230" cy="210" r="140" fill="none" stroke="#1e90ff" stroke-opacity=".25" stroke-width="1" class="spin-slow"/>
+          <circle cx="230" cy="210" r="140" stroke-dasharray="4 10" fill="none" stroke="#00d2ff" stroke-opacity=".5" stroke-width="1.4" class="spin-slow"/>
+
+          <line x1="230" y1="210" x2="100" y2="130" stroke="url(#edgeGrad)" stroke-opacity=".4" stroke-width="1.2"/>
+          <line x1="230" y1="210" x2="360" y2="90" stroke="url(#edgeGrad)" stroke-opacity=".45" stroke-width="1.2"/>
+          <line x1="230" y1="210" x2="100" y2="300" stroke="url(#edgeGrad)" stroke-opacity=".4" stroke-width="1.2"/>
+          <line x1="230" y1="210" x2="350" y2="320" stroke="url(#edgeGrad)" stroke-opacity=".45" stroke-width="1.2"/>
+          <line x1="230" y1="210" x2="230" y2="55" stroke="url(#edgeGrad)" stroke-opacity=".4" stroke-width="1.2"/>
+          <line x1="360" y1="90" x2="500" y2="140" stroke="url(#edgeGrad)" stroke-opacity=".35" stroke-width="1.1"/>
+          <line x1="350" y1="320" x2="500" y2="280" stroke="url(#edgeGrad)" stroke-opacity=".35" stroke-width="1.1"/>
+          <line x1="230" y1="210" x2="500" y2="210" stroke="url(#edgeGrad)" stroke-opacity=".3" stroke-width="1"/>
+
+          <g class="float-slow">
+            <rect x="70" y="106" width="66" height="46" rx="8" fill="#0d0f13" stroke="#1e90ff" stroke-width="1.4"/>
+            <text x="103" y="134" text-anchor="middle" font-family="Fira Code" font-size="13" fill="#00d2ff">{ }</text>
+          </g>
+          <g class="float-med">
+            <rect x="326" y="66" width="66" height="46" rx="8" fill="#0d0f13" stroke="#00d2ff" stroke-width="1.4"/>
+            <text x="359" y="94" text-anchor="middle" font-family="Fira Code" font-size="12" fill="#1e90ff">API</text>
+          </g>
+          <g class="float-fast">
+            <rect x="68" y="276" width="66" height="46" rx="8" fill="#0d0f13" stroke="#1e90ff" stroke-width="1.4"/>
+            <circle cx="101" cy="299" r="9" fill="none" stroke="#00d2ff" stroke-width="1.4"/>
+          </g>
+          <g class="float-med">
+            <rect x="316" y="296" width="66" height="46" rx="8" fill="#0d0f13" stroke="#00d2ff" stroke-width="1.4"/>
+            <path d="M336 319h26M336 314h18M336 324h20" stroke="#1e90ff" stroke-width="1.4" stroke-linecap="round"/>
+          </g>
+          <g class="float-slow">
+            <rect x="198" y="16" width="64" height="46" rx="8" fill="#0d0f13" stroke="#00d2ff" stroke-width="1.4"/>
+            <path d="M218 39h24M218 32h16" stroke="#1e90ff" stroke-width="1.4" stroke-linecap="round"/>
+          </g>
+          <g class="float-fast">
+            <rect x="460" y="110" width="60" height="44" rx="8" fill="#0d0f13" stroke="#1e90ff" stroke-width="1.4"/>
+            <circle cx="490" cy="132" r="8" fill="none" stroke="#00d2ff" stroke-width="1.4"/>
+          </g>
+          <g class="float-med">
+            <rect x="460" y="256" width="60" height="44" rx="8" fill="#0d0f13" stroke="#00d2ff" stroke-width="1.4"/>
+            <path d="M478 278h26M478 273h16" stroke="#1e90ff" stroke-width="1.4" stroke-linecap="round"/>
+          </g>
+
+          <circle cx="230" cy="210" r="6" fill="#eef2f7"/>
+          <circle cx="500" cy="210" r="4" fill="#00d2ff" class="pulse-glow"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <svg class="about-network" viewBox="0 0 1600 500" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="aboutEdge" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#1e90ff"/>
+          <stop offset="1" stop-color="#00d2ff"/>
+        </linearGradient>
+      </defs>
+      <line x1="60" y1="120" x2="480" y2="220" stroke="url(#aboutEdge)" stroke-width="1"/>
+      <line x1="480" y1="220" x2="820" y2="140" stroke="url(#aboutEdge)" stroke-width="1"/>
+      <line x1="820" y1="140" x2="1120" y2="260" stroke="url(#aboutEdge)" stroke-width="1"/>
+      <line x1="1120" y1="260" x2="1480" y2="160" stroke="url(#aboutEdge)" stroke-width="1"/>
+      <line x1="480" y1="220" x2="760" y2="380" stroke="url(#aboutEdge)" stroke-width="1"/>
+      <line x1="760" y1="380" x2="1200" y2="420" stroke="url(#aboutEdge)" stroke-width="1"/>
+      <line x1="1120" y1="260" x2="1420" y2="380" stroke="url(#aboutEdge)" stroke-width="1"/>
+      <circle cx="60" cy="120" r="3" fill="#1e90ff"/>
+      <circle cx="480" cy="220" r="3.5" fill="#00d2ff"/>
+      <circle cx="820" cy="140" r="3" fill="#1e90ff"/>
+      <circle cx="1120" cy="260" r="3.5" fill="#00d2ff"/>
+      <circle cx="1480" cy="160" r="3" fill="#1e90ff"/>
+      <circle cx="760" cy="380" r="3" fill="#00d2ff"/>
+      <circle cx="1200" cy="420" r="3" fill="#1e90ff"/>
+      <circle cx="1420" cy="380" r="3" fill="#00d2ff"/>
+    </svg>
+    <div class="eyebrow reveal">Sobre mim</div>
+    <h2 class="section-title reveal">Arquitetura pensada, código sustentável.</h2>
+    <p class="section-sub reveal reveal-delay-1">Minha abordagem parte do problema, não da tecnologia: entendo o domínio, desenho a arquitetura e só então escrevo a solução sempre buscando simplicidade sem abrir mão de robustez.</p>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Sou estudante de <strong>Engenharia de Software</strong>, apaixonado por transformar problemas complexos em sistemas simples de usar e fáceis de manter. Trabalho tanto na lógica de back-end quanto na experiência de front-end, o que me dá uma visão completa do produto.</p>
+        <p>Gosto de pensar em <strong>arquitetura</strong> antes de escrever a primeira linha de código: estruturar dados, prever falhas e desenhar interfaces que resolvem exatamente o que o usuário precisa, nem mais, nem menos.</p>
+        <p>Estou sempre estudando novas ferramentas, mas mantenho uma base sólida em fundamentos: lógica, estrutura de dados e boas práticas de engenharia.</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card reveal">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24"><path fill="#1e90ff" d="M8.5 16.5c-1.6 1 3.6 1.7 6.7.6-2.1 1.5-9.9 2.2-8.5-.8 0 0 .9.1 1.8.2Z"/><path fill="#00d2ff" d="M15.9 13.4c1.4 1.6-.4 2.9-.4 2.9s3.6-1.9 2-4.2c-1.5-2.2-2.7-3.3 3.6-7 0 0-9.9 2.5-5.2 8.3Z"/><path fill="#1e90ff" d="M10 18.9s-1.6 1 1.1 1.3c3.2.4 4.9.3 8.3-.4 0 0 .8.5-.9 1-3.5.9-13.1 1.2-1.6-.5-.9-.2Zm-.6-2.7s-1.8 1.3 1 1.6c3.4.4 6.1.4 10.5-.6 0 0 .6.6-.5 1-4.1 1.2-14.7.8-9.6-1.3-.9.3Z"/></svg>
+          </div>
+          <div class="tag">BACK-END</div>
+          <h3>Java</h3>
+          <p>Programação orientada a objetos, Spring Boot e arquitetura de sistemas robustos.</p>
+        </div>
+        <div class="stack-card reveal reveal-delay-1">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24"><defs><linearGradient id="kt-c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00d2ff"/><stop offset="1" stop-color="#1e90ff"/></linearGradient></defs><path fill="url(#kt-c)" d="M3 3h18L12 12l9 9H3V3Z"/></svg>
+          </div>
+          <div class="tag">MODERNO &amp; JVM</div>
+          <h3>Kotlin</h3>
+          <p>Desenvolvimento conciso e seguro, do backend JVM ao ecossistema Android.</p>
+        </div>
+        <div class="stack-card reveal reveal-delay-1">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00d2ff" stroke-width="1.7"><path d="M9 8v8M9 12h4"/><path d="M17.5 9.5l1.2-.8M17.5 9.5v1.6M17.5 14.5l1.2.8M17.5 14.5v-1.6M20 9.5l1.2-.8M20 9.5v1.6M20 14.5l1.2.8M20 14.5v-1.6"/><rect x="3.2" y="4.5" width="17.6" height="15" rx="2.4"/></svg>
+          </div>
+          <div class="tag">.NET &amp; CORPORATIVO</div>
+          <h3>C#</h3>
+          <p>Arquitetura de backend em .NET, orientada a sistemas corporativos escaláveis.</p>
+        </div>
+        <div class="stack-card reveal reveal-delay-2">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#1e1e1e"/><path fill="#00d2ff" d="M6.6 16.4l1.5-.9c.3.5.6.9 1.2.9.6 0 1-.2 1-1.2V9.8h1.9v5.4c0 2-1.2 2.9-2.8 2.9-1.5 0-2.4-.8-2.8-1.7Z"/><path fill="#1e90ff" d="M13 16.2l1.5-.9c.4.6 1 1.1 1.9 1.1.8 0 1.3-.4 1.3-.9 0-.6-.5-.9-1.4-1.3l-.5-.2c-1.4-.6-2.3-1.3-2.3-2.9 0-1.4 1.1-2.5 2.8-2.5 1.2 0 2.1.4 2.7 1.5l-1.5.9c-.3-.5-.6-.8-1.2-.8-.5 0-.9.3-.9.8 0 .5.3.7 1.2 1.1l.5.2c1.7.7 2.6 1.4 2.6 3.1 0 1.7-1.4 2.7-3.2 2.7-1.8 0-2.9-.8-3.5-1.9Z"/></svg>
+          </div>
+          <div class="tag">INTERAÇÃO</div>
+          <h3>JavaScript</h3>
+          <p>Interfaces dinâmicas, manipulação de DOM e lógica client-side pura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="eyebrow reveal">Projetos</div>
+    <h2 class="section-title reveal">Trabalhos em destaque.</h2>
+    <p class="section-sub reveal reveal-delay-1">Uma seleção de projetos que mostram como aplico lógica, arquitetura e design de interface na prática.</p>
+
+    <div class="project-grid">
+      <div class="project-card reveal">
+        <div class="proj-illustration">
+          <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice">
+            <rect x="20" y="20" width="70" height="50" rx="4" fill="none" stroke="#1e90ff" stroke-width="1"/>
+            <rect x="110" y="20" width="70" height="50" rx="4" fill="none" stroke="#00d2ff" stroke-width="1"/>
+            <rect x="200" y="20" width="70" height="50" rx="4" fill="none" stroke="#1e90ff" stroke-width="1"/>
+            <path d="M55 70v30M145 70v30M235 70v30M55 100h180" stroke="#00d2ff" stroke-width="1"/>
+            <rect x="90" y="120" width="110" height="70" rx="4" fill="none" stroke="#1e90ff" stroke-width="1"/>
+            <circle cx="145" cy="155" r="18" fill="none" stroke="#00d2ff" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="proj-index">01 / SISTEMA</div>
+        <h3>Gestão de Estoque</h3>
+        <p>Sistema desktop em Java para controle de inventário, com cadastro de produtos, movimentações e relatórios em tempo real.</p>
+        <div class="proj-tags"><span>Java</span><span>OOP</span><span>SQL</span></div>
+        <div class="proj-links">
+          <a href="#" target="_blank" rel="noopener">Live Demo <span>↗</span></a>
+          <a href="#" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-illustration">
+          <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice">
+            <polyline points="20,180 70,140 120,160 170,90 220,110 270,50" fill="none" stroke="#00d2ff" stroke-width="1.5"/>
+            <circle cx="70" cy="140" r="3" fill="#1e90ff"/>
+            <circle cx="170" cy="90" r="3" fill="#1e90ff"/>
+            <circle cx="270" cy="50" r="3" fill="#00d2ff"/>
+            <line x1="20" y1="190" x2="280" y2="190" stroke="#1e90ff" stroke-width="1"/>
+            <line x1="20" y1="20" x2="20" y2="190" stroke="#1e90ff" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="proj-index">02 / WEB APP</div>
+        <h3>Dashboard Financeiro</h3>
+        <p>Painel interativo para acompanhamento de gastos pessoais, com gráficos dinâmicos e persistência local de dados.</p>
+        <div class="proj-tags"><span>JavaScript</span><span>Kotlin</span><span>Chart.js</span></div>
+        <div class="proj-links">
+          <a href="#" target="_blank" rel="noopener">Live Demo <span>↗</span></a>
+          <a href="#" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="proj-illustration">
+          <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice">
+            <rect x="30" y="30" width="240" height="160" rx="6" fill="none" stroke="#1e90ff" stroke-width="1"/>
+            <line x1="30" y1="55" x2="270" y2="55" stroke="#00d2ff" stroke-width="1"/>
+            <circle cx="45" cy="42" r="3" fill="#1e90ff"/>
+            <circle cx="58" cy="42" r="3" fill="#00d2ff"/>
+            <rect x="50" y="75" width="70" height="40" rx="3" fill="none" stroke="#00d2ff" stroke-width="1"/>
+            <rect x="135" y="75" width="115" height="12" rx="3" fill="none" stroke="#1e90ff" stroke-width="1"/>
+            <rect x="135" y="95" width="80" height="12" rx="3" fill="none" stroke="#1e90ff" stroke-width="1"/>
+            <rect x="50" y="130" width="200" height="40" rx="3" fill="none" stroke="#00d2ff" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="proj-index">03 / PLATAFORMA</div>
+        <h3>API Corporativa</h3>
+        <p>API REST em C# com arquitetura em camadas, autenticação segura e documentação automatizada para integrações.</p>
+        <div class="proj-tags"><span>C#</span><span>.NET</span><span>REST API</span></div>
+        <div class="proj-links">
+          <a href="#" target="_blank" rel="noopener">Live Demo <span>↗</span></a>
+          <a href="#" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="eyebrow reveal">Contato</div>
+    <h2 class="section-title reveal">Vamos construir algo juntos.</h2>
+    <p class="section-sub reveal reveal-delay-1">Aberto a oportunidades, freelas e conversas sobre tecnologia. Escolha o canal que preferir.</p>
+
+    <div class="contact-wrap">
+      <div class="contact-links reveal">
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">WhatsApp <span class="arrow">↗</span></a>
+        <a href="https://www.linkedin.com/in/rodrigo-da-cruz-silva/" target="_blank" rel="noopener">LinkedIn <span class="arrow">→</span></a>
+        <a href="#" target="_blank" rel="noopener">GitHub <span class="arrow">→</span></a>
+      </div>
+
+      <form id="contactForm" class="reveal reveal-delay-1" action="https://formspree.io/f/xzdnrjnp" method="POST">
+        <div class="field">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+        </div>
+        <div class="field">
+          <label for="msg">Mensagem</label>
+          <textarea id="msg" name="message" rows="4" placeholder="Conte um pouco sobre o projeto..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="copy">© <span id="year"></span> Rodrigo Dev. Todos os direitos reservados.</div>
+  <div class="social">
+    <a href="https://github.com/rodrigo-sillva" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/rodrigo-da-cruz-silva/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://wa.me/5574999410027" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
